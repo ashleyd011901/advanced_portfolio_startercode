@@ -11,82 +11,176 @@
 -->
 
 <!DOCTYPE html>
-<head> 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<head>
+  <title>Ashley Diaz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
 
 </head>
 
-    <body>
+<body>
 
- <!--<body-->
-    <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <!--<body-->
+  <!-- Nav Bar -->
+  <!-- <nav class="<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">Sticky top</a>
+</nav>">
+  <a class="navbar-brand" href="#">Ashley Diaz</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Ashley Diaz<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Projects</a>
+      <a class="nav-item nav-link" href="#">Portfolio</a>
       <a class="nav-item nav-link" href="#">About</a>
       <a class="nav-item nav-link" href="#">Contact</a>
     </div>
   </div>
-</nav>
+</nav> -->
+<body data-spy="scroll" data-target=".navbar">
+    
+        <!-- 1. Try scrolling. Now let's add navbar-fixed-top to the
+                nav's class after navbar-default and try scrolling again-->
+        
+        <!-- 2. Now we are going to add ScrollSpy, replace <body> above with: 
+                    <body data-spy="scroll" data-target=".navbar">
+                Adding these attributes will make it so that our navbar updates
+                according to our scroll position. Try scrolling again.-->
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="nav-link" href="#">Ashley Diaz<span class="sr-only">(current)</span></a>
+            </div>
+            
+            <ul class="nav navbar-nav ">
+              
+              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#contatcuidcgd">Contact</a></li>
+              
+              <!-- 3. Add two more colors of your choice. Remember to also 
+                      add the divs bellow with the corresponding id and 
+                      background-color-->
+              
+            </ul>
+          </div>
+        </nav>
 
-    
-    <!-- Header -->
-    
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Ashley Diaz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#Portfolio">Portfolio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Dropdown" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Personal
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Music</a>
+            <a class="dropdown-item" href="#">Pictures</a>
+            <a class="dropdown-item" href="#">Interests</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
 
-    <!-- Portfolio Grid Section -->
-    <div class="row">
-            <div class="col-12">write</div>
-         </div>
-         <div class="row">
-            <div class="col-6">text</div>
-             <div class="col-6">text</div>
-         </div>
-          <div class="row">
-            <div class="col-2">text</div>
-            <div class="col-8">text</div>
-            <div class="col-12">Ashley loves the city and has been living in NYC since she was born. She curently goes to school in Manhattan. Ashley plans on entering the field of computer science. She has attended Girls Who Code at Columbia University for two seasons and had the opportunity to work at NYU Tandon School of Engineering's Cyber Secrity Lab in K-12 Stem Education. In addition to computer science, Ashley is interested in expanding her abilities regarding languages and plans on teaching english in another country.</div>
-         </div>
-    
-    
-    
- 
+  <!-- Header -->
 
-    <!-- About Section -->
 
-        <div class="row">
-            <div class="col-md-4">
-                <a class="thumbnail" href="#">
+  <!-- Portfolio Grid Section -->
+  <div class="row">
+    <div class="col-md-12">
+      <img src="images/AshleyDiaz.jpg" /> Ashley
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img src="images/Hangman.png" /> 
+       <h3>Project #1</h3> 
+        <a href="https://popcode.org/?gist=f3c67e811afabbc0ad51d642f1003e8d" target="_blank">code</a>
+    </div>
+    <div class="caption">
+      <img src="images/Magic8Ball.png" /> 
+      
+      <div class="caption">
+        <h3>Project #2</h3>
+        <a href="https://popcode.org/?gist=0c5ad478d2da05c7a4992ecd896c1cd1" target="_blank">code</a>
+      </div>
+      
+       
+    </div>
+    
+    
+    
+    
+  </div>
+  <div class="row">
+    <div class="caption">
+      <img src="images/Samus.png" />
+       <h3>Project #3</h3> 
+       <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=basurashley&ProjectName=samus" target="_blank">code</a>
+      
+    </div>
+    <div class="col-md-6">Project #4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">bio Ashley </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Contact</div>
+  </div>
+  
+  
+  
+  
+  
+  <!-- About Section -->
+  
+  <div class="row">
+  <div class="col-md-4">
+    <a class="thumbnail" href="#">
                     <img src="images/LastSupper.jpg" />
                 </a>
-                <!-- add caption text below here  -->
-            </div>
-            <div class=" col-md-4">
-                <a class="thumbnail" href="#">
+    <!-- add caption text below here  -->
+  </div>
+  <div class=" col-md-4">
+    <a class="thumbnail" href="#">
                     <img src="images/MonaLisa.jpg" />
                 </a>
-            </div>
-            <div class="col-md-4">
-                <a class="thumbail" href="#">
+  </div>
+  <div class="col-md-4">
+    <a class="thumbail" href="#">
                     <img src="images/StarryNight.jpg" />
                 </a>
-            </div>
-        </div>   
+  </div>
+</div>
+  
+  <!-- Contact Section -->
 
-    <!-- Contact Section -->
 
-
-    <!-- Footer -->
+  <!-- Footer -->
+  </div>
 
 </body>
 
