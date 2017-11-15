@@ -15,6 +15,21 @@
 
 
 /* Portfolio Item CSS */
+.profile {
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+
+.caption {
+    height: 300px;
+    
+}
+
+.project {
+    height: 175px;
+}
 
 
 
