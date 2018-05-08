@@ -1,42 +1,15 @@
-/* Nav Bar CSS */
-
-
-
-/* Header CSS */
-
-
-
-/* Section CSS */
-
-
-
-/* About Section CSS */
-
-
-
-/* Portfolio Item CSS */
-.profile {
+.profile { /* class for pfp */
     display: block;
     margin: auto;
     border-radius: 100%;
-    
 }
 
-.caption {
+.caption { /* div holding images and their captions (taller than images) */
     height: 300px;
-    
 }
 
-.project {
+.project { /* images within caption div */
     height: 175px;
 }
-
-
-
-/* Footer CSS */
-
-
-
-/* Button CSS */
 
 
